@@ -1,4 +1,4 @@
-# 🚲 Seoul Bike Sharing Demand — ML Prediction
+#  Seoul Bike Sharing Demand — ML Prediction
 
 <div align="center">
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project builds an end-to-end **regression ML pipeline** to predict the number of bikes rented per hour in Seoul, South Korea. Using weather conditions, seasonal patterns, and time features, the model learns when demand peaks (rush hours, warm sunny days) and when it drops (rain, snow, winter nights).
 
@@ -28,7 +28,7 @@ SeoulBikeData.csv → EDA → Feature Engineering → Train 4 Models → Evaluat
 
 ---
 
-## ✨ Features
+##  Features
 
 - ✅ **4 regression models** trained and compared side-by-side
 - ✅ **Cyclical time encoding** — preserves the circular nature of hours and months
@@ -42,7 +42,7 @@ SeoulBikeData.csv → EDA → Feature Engineering → Train 4 Models → Evaluat
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 | Property | Value |
 |---|---|
@@ -52,7 +52,7 @@ SeoulBikeData.csv → EDA → Feature Engineering → Train 4 Models → Evaluat
 | **Time span** | 1 full year (December 2017 – November 2018) |
 | **Encoding** | `latin-1` |
 
-### 📋 Raw Columns
+###  Raw Columns
 
 | Column | Description | Type |
 |---|---|---|
@@ -71,7 +71,7 @@ SeoulBikeData.csv → EDA → Feature Engineering → Train 4 Models → Evaluat
 | `Holiday` | Holiday / No Holiday | string |
 | `Functioning Day` | Yes / No | string |
 
-### 🔧 Engineered Features
+###  Engineered Features
 
 | Feature | Description |
 |---|---|
@@ -90,7 +90,7 @@ SeoulBikeData.csv → EDA → Feature Engineering → Train 4 Models → Evaluat
 
 ---
 
-## 🤖 Models
+##  Models
 
 | Model | Task | Notes |
 |---|---|---|
@@ -99,7 +99,7 @@ SeoulBikeData.csv → EDA → Feature Engineering → Train 4 Models → Evaluat
 | **Gradient Boosting** | Ensemble (boosting) | 300 estimators, lr=0.1, depth=5, subsample=0.8 |
 | **XGBoost** | Optimised boosting | 500 estimators, lr=0.05 (requires `pip install xgboost`) |
 
-### 📐 Evaluation Metrics
+###  Evaluation Metrics
 
 | Metric | Formula | What it measures |
 |---|---|---|
@@ -109,7 +109,7 @@ SeoulBikeData.csv → EDA → Feature Engineering → Train 4 Models → Evaluat
 
 ---
 
-## 📈 Results
+##  Results
 
 Expected performance on 20% holdout test set:
 
@@ -122,7 +122,7 @@ Expected performance on 20% holdout test set:
 
 > Actual results depend on random seed and train/test split. Tuned Random Forest may match or exceed XGBoost.
 
-### 🔑 Key Findings
+###  Key Findings
 
 - **Hour of day** is the most important feature — demand peaks sharply at **8 AM** and **6 PM**
 - **Temperature** has a strong positive effect — every 5°C increase raises expected demand
@@ -132,7 +132,7 @@ Expected performance on 20% holdout test set:
 
 ---
 
-## 🛠 Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 
@@ -173,7 +173,7 @@ seoul-bike-sharing-prediction/
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### Run the notebook
 
@@ -224,7 +224,7 @@ print(f"Predicted rentals: {int(predicted_bikes)} bikes")
 
 ---
 
-## 🔄 Pipeline
+##  Pipeline
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -257,7 +257,7 @@ print(f"Predicted rentals: {int(predicted_bikes)} bikes")
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 seoul-bike-sharing-prediction/
@@ -270,7 +270,7 @@ seoul-bike-sharing-prediction/
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 ```
 pandas>=1.3.0
@@ -285,7 +285,7 @@ ipykernel>=6.0.0
 
 ---
 
-## 🔮 Next Steps
+##  Next Steps
 
 - [ ] **LSTM / Temporal Fusion Transformer** for time-series forecasting
 - [ ] **Prophet** for trend + seasonality decomposition
@@ -296,7 +296,7 @@ ipykernel>=6.0.0
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please open an issue first to discuss what you'd like to change.
 
@@ -308,13 +308,13 @@ Contributions are welcome! Please open an issue first to discuss what you'd like
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - Dataset: [Seoul Bike Sharing Demand](https://archive.ics.uci.edu/ml/datasets/Seoul+Bike+Sharing+Demand) — UCI ML Repository
 - City of Seoul Open Data Portal
@@ -322,6 +322,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
-<div align="center">
-Made with ❤️ for urban mobility and smart city research
-</div>
+
